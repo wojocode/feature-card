@@ -60,7 +60,7 @@ img{
     justify-content: center; 
     align-content: flex-start;
     flex-wrap: wrap;
-    gap:25px;
+    gap:30px;
 }
 .container div{
 padding:20px;
@@ -71,7 +71,7 @@ flex:0 1 300px;
 }
 .container div img{
     float:right;
-    margin-top:20px;
+    margin-top:40px;
 }
 .container div p{
 font-size:0.7rem;
@@ -85,7 +85,7 @@ padding:3px 0;
 }
 }
 
-@media  screen and (min-width:1188px){
+@media  screen and (min-width:1200px){
 
    .container div:first-child , .container div:nth-child(3){
         transform:translateY(50%)
