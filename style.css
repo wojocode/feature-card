@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+--red: hsl(0, 78%, 62%);
+--cyan: hsl(180, 62%, 55%);
+--orange: hsl(34, 97%, 64%);
+--blue: hsl(212, 86%, 64%);
+--very_dark_blue:hsl(234, 12%, 34%);
+--grayish_blue: hsl(229, 6%, 66%);
+--very_light_gray: hsl(0, 0%, 98%);
+    font-size:15px;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height:100vh;
+    background-color: var(--very_light_gray);
+}
+main{
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:35px 0;
+}
+.brand_label{
+    max-width:450px;
+    width:85%;
+    margin:0 auto 50px auto;
+    text-align: center;
+}
+
+.brand_label h2 , .brand_label h1{
+    font-weight:200;
+    font-size:1.6rem;
+    color:var(--very_dark_blue);
+}
+.brand_label h1{
+    font-weight:600;
+}
+.brand_label p{
+    width:75%;
+    margin:0 auto;
+    margin-top:15px;
+    font-weight:200;
+    font-size:1rem;
+    color:var(--grayish_blue);
+}
+.container h3{
+    font-size:1.4rem;
+    color:var(--very_dark_blue);
+}
+.container{
+    width:85%;
+    max-width:1100px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;   
+    justify-content: center; 
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.container div{
+    padding:25px;
+    border-radius:0.25rem;
+    border-top:4px solid;
+    box-shadow:0px 8px 10px 1px rgba(128, 128, 128, 0.273);
+    flex:0 1 330px;
+}
+.container div:nth-child(1){
+    border-color:var(--cyan);
+}
+.container div:nth-child(2){
+    border-color:var(--red);
+}
+.container div:nth-child(3){
+    border-color:var(--orange);
+}
+.container div:nth-child(4){
+    border-color:var(--blue);
+}
+.container div img{
+    float:right;
+    margin-top:35px;
+}
+.container div p{
+    font-size:0.9rem;
+    line-height: 1.5rem;
+    color:var(--grayish_blue);
+    font-weight:200;
+    padding:5px 0;
+    font-weight: 200;
+}
+
+@media screen and (min-width:812px){
+    .brand_label h2 , .brand_label h1{
+    font-size:2.3rem;
+    }
+    main{
+      margin:0 0;
+    }
+    .brand_label p{
+        width:100%;
+    }
+    .container .karma_card{
+        order:1;
+    }
+   }
+@media  screen and (min-width:1236px){
+   .container .supervisor_card , .container .calculator_card{
+    transform:translateY(50%);
+     }
+     .container div h3{
+        font-weight: 1.4rem;
+     }
+}
+    
