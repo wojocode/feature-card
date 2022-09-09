@@ -17,42 +17,45 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    height:100vh;
+    min-height:100vh;
+    background-color: var(--very_light_gray);
 }
 main{
-    min-height:100%;
+    min-height:100vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    margin:35px 0;
 }
 .brand_label{
-    max-width:400px;
-    width:80%;
-    margin:0 auto 90px auto;
+    max-width:450px;
+    width:85%;
+    margin:0 auto 50px auto;
     text-align: center;
-    border:1px solid green;
 }
+
 .brand_label h2 , .brand_label h1{
     font-weight:200;
-    font-size:1.3rem;
+    font-size:1.6rem;
+    color:var(--very_dark_blue);
 }
 .brand_label h1{
-font-weight:600
-}
-img{
-    width:3rem;
+    font-weight:600;
 }
 .brand_label p{
+    width:75%;
+    margin:0 auto;
     margin-top:15px;
     font-weight:200;
-    font-size:0.8rem;
+    font-size:1rem;
+    color:var(--grayish_blue);
 }
 .container h3{
-    font-size:1rem;
+    font-size:1.4rem;
     color:var(--very_dark_blue);
 }
 .container{
-    width:80%;
+    width:85%;
     max-width:1100px;
     margin:0 auto;
     display:flex;
@@ -63,33 +66,57 @@ img{
     gap:30px;
 }
 .container div{
-padding:20px;
-border-radius:0.25rem;
-border-top:3px solid;
-box-shadow:0px 8px 10px 1px rgba(128, 128, 128, 0.273);
-flex:0 1 300px;
+    padding:25px;
+    border-radius:0.25rem;
+    border-top:4px solid;
+    box-shadow:0px 8px 10px 1px rgba(128, 128, 128, 0.273);
+    flex:0 1 330px;
+}
+.container div:nth-child(1){
+    border-color:var(--cyan);
+}
+.container div:nth-child(2){
+    border-color:var(--red);
+}
+.container div:nth-child(3){
+    border-color:var(--orange);
+}
+.container div:nth-child(4){
+    border-color:var(--blue);
 }
 .container div img{
     float:right;
-    margin-top:40px;
+    margin-top:35px;
 }
 .container div p{
-font-size:0.7rem;
-color:var(--grayish_blue);
-font-weight:200;
-padding:3px 0;
+    font-size:0.9rem;
+    line-height: 1.5rem;
+    color:var(--grayish_blue);
+    font-weight:200;
+    padding:5px 0;
+    font-weight: 200;
 }
-@media screen and (min-width:375){
+
+@media screen and (min-width:812px){
     .brand_label h2 , .brand_label h1{
-    font-size:3rem;
-}
-}
-
-@media  screen and (min-width:1200px){
-
-   .container div:first-child , .container div:nth-child(3){
-        transform:translateY(50%)
+    font-size:2.3rem;
+    }
+    main{
+      margin:0 0;
+    }
+    .brand_label p{
+        width:100%;
+    }
+    .container .karma_card{
+        order:1;
+    }
+   }
+@media  screen and (min-width:1236px){
+   .container .supervisor_card , .container .calculator_card{
+    transform:translateY(50%);
      }
-    
+     .container div h3{
+        font-weight: 1.4rem;
+     }
 }
     
